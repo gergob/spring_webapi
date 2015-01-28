@@ -14,6 +14,7 @@ public interface ContactRepository extends MongoRepository<Contact, String> {
 	public List<Contact> findByWebsite(String website);
 	public List<Contact> findByEmail(String email);
 	public List<Contact> findByMobilePhone(String mobilePhone);
+	public List<Contact> findByMobilePhoneNull();
 	
 }
 

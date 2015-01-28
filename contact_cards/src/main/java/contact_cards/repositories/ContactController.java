@@ -82,8 +82,7 @@ public class ContactController {
 			result = repository.findByMobilePhone(mobilePhone);
 		}
 		else {
-			result = repository.findByMobilePhone("");
-			result.addAll(repository.findByMobilePhone(null));
+			result = repository.findByMobilePhoneNull();
 		}
 
 		return result;
